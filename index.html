@@ -29,13 +29,17 @@
 		arjs="detectionMode: mono_and_matrix;
 		      matrixCodeType: 3x3;"
 		vr-mode-ui="enabled: false">
+		   <a-assets>
+			 <video id="arthit" playsinline webkit-playsinline 
+				autoplay loop="true" src="arthit.mp4"></video>
+		   </a-assets>
 		<a-marker type="barcode" value="3">
 			<a-image src="123.jpg"></a-image>
 		</a-marker>
 		<a-marker type="barcode" value="5">
-			<a-box position="0 0.5 0"
-	       		 material="color: blue;">
-			</a-box>
+			<a-video src="#arthit" widt="4" height="3"
+				 toggle-on-tap>
+			</a-video>
 		</a-marker>
 		<a-camera>
 		</a-camera>
